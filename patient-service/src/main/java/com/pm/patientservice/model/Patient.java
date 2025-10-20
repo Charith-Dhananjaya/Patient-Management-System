@@ -3,11 +3,15 @@ package com.pm.patientservice.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.UUID;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Data
 public class Patient {
@@ -30,6 +34,6 @@ public class Patient {
     @NotNull
     private LocalDate dateOfBirth;
 
-    @NotNull
+    @org.jetbrains.annotations.NotNull
     private LocalDate registered_date;
 }

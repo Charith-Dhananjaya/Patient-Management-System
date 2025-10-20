@@ -21,6 +21,7 @@ public class PatientMapper {
     }
 
     public static Patient toModel(PatientRequestDTO patientRequestDTO){
+
         Patient patient = new Patient();
 
         patient.setName(patientRequestDTO.getName());
